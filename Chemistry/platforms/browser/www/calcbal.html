@@ -1,0 +1,25 @@
+div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Voltar</span></a></div>
+    <div class="center"><img src="img/ot/calculator.png" width=40> Calculadora</div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="cabal" class="page">
+    <div class="page-content">
+      <div class="content-block">
+        <div class="list-block">
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input id="formula" type="text" placeholder="Ex: H + O = H2O">
+              </div>
+            </div>
+          </div>
+          <span id="balanced" style="font-family:serif; font-size:150%; line-height:1.6;"></span><span id="message"></span><code id="codeOutput">&#xA0;</code>
+          <p><a href="#" class="button button-fill color-green" onclick="balance(document.getElementById('formula').value)">Calcular</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Chemistry</title>
+    <!-- Path to Framework7 Library CSS-->
+    <!--<link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center"><img src="img/ot/science.png" width=40></div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">Pagina Inicial</div>
+              <div class="list-block align-top center">
+                <ul>
+                  <li>
+                    <a href="balance.html" class="item-link" onclick="ptf()">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"> <img src="img/ot/balance.png" width=40> Balanceamento</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="initquiz.html" class="item-link">
+                      <div class="item-content">
+                        <div class="center item-inner">
+                          <div class="item-title"> <img src="img/ot/quiz.png" width=40> Quiz</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="calcbal.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><img src="img/ot/calculator.png" width=40> Calculadora</div>
+                        </div>
+                      </div></a></li>
+                  <!--<li><a href="form.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Form</div>
+                        </div>
+                      </div></a></li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link"></a><a data-popover=".popover-about" class="open-popover"><img src="img/ot/about.png" width=30></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="popover popover-about">
+    <div class="popover-angle"></div>
+    <div class="popover-inner">
+      <div class="content-block">
+        <p>Sobre</p>
+        <p>-Creditos pelos icones-</p>
+      </div>
+    </div>
+  </div>
+    <!-- Path to Framework7 Library JS-->
+      <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/quiz.js"></script>
+    <script type="text/javascript" src="js/balance.js"></script>
+    <script type="text/javascript" src="js/balance2.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

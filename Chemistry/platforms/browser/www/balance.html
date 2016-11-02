@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Balanceamento</title>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link" onclick="finbaleq"> <i class="icon icon-back"></i><span>Voltar</span></a></div>
+        <div class="center"><img src="img/ot/balance.png" width=40> Balanceamento</div>
+      </div>
+    </div>
+    <div class="pages">
+      <!-- Page, data-page contains page name-->
+      <div data-page="balance" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+          <div class="content-block">
+            <div class="content-block-inner">
+              <div class="content-block-title"></div>
+              <span id="balanced" style="font-family:serif; font-size:150%; line-height:1.6;"></span><span id="message"></span><code id="codeOutput">&#xA0;</code>
+              <div class="content-block">
+                <table style="font-family:serif; font-size:90%; line-height:1.6; text-align:center">
+                  <tr>
+                    <td id="rr1"></td>
+                    <td id="ee1"></td>
+                    <td> + </td>
+                    <td id="rr2"></td>
+                    <td id="ee2"></td>
+                    <td> → </td>
+                    <td id="rr3"></td>
+                    <td id="ee3"></td>
+                    <td> + </td>
+                    <td id="rr4"></td>
+                    <td id="ee4"></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" onclick="blplus('rr1')"><img src="img/ot/plus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="" onclick="blplus('rr2')"><img src="img/ot/plus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="" onclick="blplus('rr3')"><img src="img/ot/plus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="" onclick="blplus('rr4')"><img src="img/ot/plus.png" width=25></a></td><td></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#" onclick="blminus('rr1')"><img src="img/ot/minus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="#" onclick="blminus('rr2')"><img src="img/ot/minus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="#" onclick="blminus('rr3')"><img src="img/ot/minus.png" width=25></a></td><td></td><td></td>
+                    <td><a href="#" onclick="blminus('rr4')"><img src="img/ot/minus.png" width=25></a></td><td></td>
+                  </tr>
+                </table>
+                <table>
+                  <tr><td><a href="" onclick="ptf()"><img src="img/ot/refresh.png" width=50></a></td><td width=50 height=100></td><td><a href="" onclick="checarv3()"><img src="img/ot/check.png" width=50></a></td><td width=50></td><td><a href="" onclick="limeq()"><img src="img/ot/close.png" width=50></a></td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
